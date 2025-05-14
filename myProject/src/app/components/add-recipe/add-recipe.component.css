@@ -1,0 +1,91 @@
+/* מיכל הקלט */
+.login-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: #f9f1f9; /* צבע פסטל בהיר ורגוע */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  color: #4a4a4a; /* צבע אפור כהה לטקסט */
+  font-family: "Lora", serif; /* כתב Lora המעודן */
+}
+
+/* כותרת */
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700; /* הדגשת הכותרת */
+  color: #130715; /* סגול כהה ורגוע לכותרת */
+  margin-bottom: 24px;
+  font-family: "Lora", serif; /* כתב Lora לכותרת */
+  text-shadow: 0px 0px 10px rgba(156, 39, 176, 0.7),
+    /* הילה רכה עם סגול */ 0px 0px 20px rgba(156, 39, 176, 0.5); /* הילה עדינה יותר */
+}
+
+/* שדות הקלט */
+mat-form-field {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+/* צבע התווית */
+mat-label {
+  color: #9c27b0; /* סגול פסטל לתוויות */
+  font-weight: 500;
+  font-family: "Lora", serif; /* כתב Lora לתוויות */
+}
+
+/* עיצוב שדות הקלט */
+input {
+  background-color: #f3e5f5; /* צבע סגול בהיר ורגוע */
+  color: #6a1b9a; /* סגול כהה */
+  border: 1px solid #9c27b0; /* גבול סגול בהיר */
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: "Lora", serif; /* כתב Lora לשדות הקלט */
+}
+
+/* ביטול הריבוע המופיע בעת פוקוס */
+input:focus {
+  outline: none; /* ביטול הריבוע */
+  background-color: #f3e5f5; /* שמירה על הצבע הקודם ללא שינוי */
+  border-color: #9c27b0; /* גבול סגול בהיר */
+}
+
+/* שגיאות */
+mat-error {
+  color: #f44336; /* אדום בהיר לשגיאות */
+}
+
+/* עיצוב הכפתור */
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #d4a8dc; /* סגול בהיר לכפתור */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Lora", serif; /* כתב Lora לכפתור */
+}
+
+/* אפקט hover על כפתור */
+button:hover {
+  background-color: #ab47bc; /* סגול בהיר יותר בהעברת עכבר */
+}
+
+/* כפתור מנוטרל */
+button:disabled {
+  background-color: #e1bee7; /* צבע סגול בהיר יותר כשכפתור מנוטרל */
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none; /* הסרת הילה */
+}

@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <ul>
+    <li><a routerLink="all">All Recipes</a></li>
+    <li><a routerLink="signup">Sign Up</a></li>
+    <li><a routerLink="login">Log In</a></li>
+    <li><a routerLink="add">Add Recipe</a></li>
+    <li class="username">
+      {{ getCur()}}
+      <mat-icon (click)="logout()" class="logout-icon">logout</mat-icon>
+    </li>
+  </ul>
+</nav>
+
+<div class="content-wrapper">
+  <router-outlet></router-outlet>
+  <app-aside></app-aside>
+</div>

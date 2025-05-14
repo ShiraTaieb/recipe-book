@@ -1,0 +1,30 @@
+<div class="recipe-container">
+  <img [src]="r.img" alt="{{ r.name }}" class="recipe-image" />
+  <h1 class="recipe-title">{{ r.name }}</h1>
+
+  <nav>
+    <ul class="recipe-details">
+      <li class="recipe-info">
+        <mat-icon>timer</mat-icon>
+        <span>Time: {{ r.time }}</span>
+      </li>
+      <li class="recipe-info">
+        <mat-icon>star</mat-icon>
+        <span>Difficulty Level: {{ r.difficultLevel }}</span>
+      </li>
+    </ul>
+  </nav>
+
+  <h3 class="ingredients-title">Ingredients</h3>
+  <ul class="ingredients-list">
+    <li
+      class="ingredient-item"
+      *ngFor="let i of r.ingrediets; let index = index"
+    >
+      {{ i }}
+    </li>
+  </ul>
+  <br />
+  <button (click)="del()">🗑️מחיקת המתכון</button>
+  <button (click)="update()">עדכון המתכון😄</button>
+</div>

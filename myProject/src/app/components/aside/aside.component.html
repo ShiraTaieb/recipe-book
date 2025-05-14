@@ -1,0 +1,19 @@
+<aside class="side">
+  <h1>Search</h1>
+  <mat-form-field appearance="outline" class="input-field">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="name" name="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="input-field">
+    <mat-label>Difficult Level</mat-label>
+    <input matInput [(ngModel)]="dif" name="dif" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="input-field">
+    <mat-label>Time</mat-label>
+    <input matInput [(ngModel)]="time" name="time" />
+  </mat-form-field>
+  <br />
+  <button (click)="save()" class="search-btn">Search</button>
+</aside>

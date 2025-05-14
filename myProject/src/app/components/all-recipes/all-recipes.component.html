@@ -1,0 +1,12 @@
+<!-- <app-nav></app-nav> -->
+<div class="recipes-list">
+  @if(arr.length==0){
+  <h1>אין פריטים תואמים לחיפוש שלך</h1>
+  } @for (r of arr; track $index) {
+  <div class="recipe-card">
+    <img src="{{ r.img }}" alt="{{ r.name }}" class="recipe-thumbnail" />
+    <h2 class="recipe-name">{{ r.name }}</h2>
+    <button class="details-btn" (click)="showMore(r._id!)">More Details</button>
+  </div>
+  }
+</div>

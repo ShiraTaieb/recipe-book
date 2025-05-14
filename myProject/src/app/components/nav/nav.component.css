@@ -1,0 +1,79 @@
+/* הגדרות כלליות */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif; /* גופן Lora המעודן */
+  background-color: #f7f1f4; /* רקע בהיר ורגוע */
+  color: #5a4e6d; /* צבע טקסט כהה אך עדין */
+  line-height: 1.6; /* רווח בין שורות קריא יותר */
+}
+
+/* עיצוב navbar */
+.navbar {
+  background-color: #d1c6e0; /* צבע סגול בהיר מאוד */
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center; /* ממרכז את כל האלמנטים בתפריט */
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* מבטיח שהnavbar יתפוס את כל הרוחב */
+  height: 70px;
+  position: fixed; /* אם ברצונך להקפיא את ה-navbar בזמן גלילה */
+  top: 0;
+  left: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #5a4e6d; /* צבע כהה ועדין לקישורים */
+  font-size: 24px; /* גודל פונט גדול יותר */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: "Lora", serif;
+}
+
+.navbar li a:hover {
+  color: #7a61a3; /* סגול בהיר להדגשה */
+}
+
+.navbar .username {
+  color: #5a4e6d;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logout-icon {
+  cursor: pointer;
+  color: #7a61a3; /* סגול בהיר */
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.logout-icon:hover {
+  color: #9c7fb4; /* סגול כהה יותר להדגשה בעת החזרה */
+}
+
+/* עיצוב עבור app-aside */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 20px;
+}

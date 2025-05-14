@@ -1,0 +1,50 @@
+/* עיצוב ה-<aside> */
+.side {
+  background: linear-gradient(
+    to right,
+    #b8a0c2,
+    #f3a8c7
+  ); /* גרדיאנט בין סגול בהיר לוורוד בהיר */
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  height: 500px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  position: fixed; /* ממקם את ה-<aside> בצד העמוד */
+  top: 60px; /* מרווח מהחלק העליון של הדף */
+  right: 0.25px; /* מרווח מהצד הימני של הדף */
+  z-index: 1000; /* שים אותו מעל אלמנטים אחרים */
+}
+
+/* עיצוב כותרת ה-<h1> */
+.side h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white; /* צבע טקסט לבן לכותרת */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* עיצוב שדות הקלט */
+.input-field {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* עיצוב הכפתור */
+.search-btn {
+  width: 100%;
+  background-color: #9e77c0; /* סגול בהיר יותר */
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #c0a1d6; /* גוון סגול בהיר יותר בעת hover */
+}
